@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+    --blue-color: blue;
+    --head-size: 30px;
+    --font-size: 25px;
+    --border: 2px solid blue;
+    --background:blue;
+    --color: white;
+    --span: rgb(190, 190, 190);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    box-shadow: 16px 16px 35px 0px rgba(68, 3, 3, 0.09);
+}
+
+header h1 {
+    font-size: var(--head-size);
+}
+
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px;
+}
+
+
+header button {
+    border: var(--border);
+    color: var(--blue-color);
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 7px;
+    background-color: white;
+}
+
+
+header button:hover {
+    cursor: pointer;
+    transition: all 0.4s ease;
+    color: var(--color);
+    background-color: var(--background);
+}
+
+header li:hover{
+    border-bottom: 1px solid black;
+    color: grey;
+    cursor: pointer;
+}
+
+.hero-container {
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.hero-container h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.hero-container p {
+    font-size: var(--head-size);
+}
+
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.center {
+    border: 1px solid grey;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 16px 16px 35px 0px rgba(0, 0, 0, 0.09);
+    text-align: center;
+}
+
+.center h1 {
+    padding: 10px 30px;
+    font-size: var(--head-size);
+    border-radius: 10px;
+    background-color: gainsboro;
+}
+
+.center h3 {
+    font-size: var(--head-size);
+    color: var(--span);
+}
+
+
+.center span {
+    font-size: var(--font-size);
+    color: black;
+}
+
+.center ul {
+    font-size: var(--head-size);
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+
+.center2 {
+    padding: 40px;
+    padding-bottom: 20px;
+}
+
+
+.btn {
+    border: var(--border);
+    color: var(--blue-color);
+    font-size: var(--head-size);
+    padding: 10px 30px;
+    border-radius: 7px;
+    background-color: white;
+
+}
+
+
+.btn:hover {
+    cursor: pointer;
+    transition: all 0.4s ease;
+    color: var(--color);
+    background-color: var(--background);
+}
+
+
+.btn1 {
+    background-color: var(--background);
+    font-size: var(--head-size);
+    padding: 10px 30px;
+    border-radius: 7px;
+    color: var(--color);
+}
+
+.btn1:hover {
+    background-color: rgb(2, 2, 27);
+    cursor: pointer;
+    /* transition: all 0.4s ease; */
+}
+footer{
+    margin-top: 100px;
+}
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 150px;
+    font-size: var(--head-size);
+}
+.foot li{
+    list-style: none;
+    font-size: var(--font-size);
+    cursor: pointer;
+}
+.foot li:hover{
+    border-bottom: 1px solid black;
+    color: grey;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 950px) {
+    .main {
+        gap: 20px;
+    }
+
+    .center2 {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    :root {
+        --head-size: 15px;
+        --font-size: 25px;
+    }
+    
+    .main {
+        gap: 10px;
+    }
+
+    header ul {
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .main .center {
+        max-width: 100%;
+    }
+    .foot{
+        gap: 100px;
+    }
+}
+
+@media (max-width: 785px) {
+    header {
+        padding: 13px;
+    }
+
+    header  ul {
+        gap: 25px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+    .foot{
+        flex-direction: column;
+        gap: 70px;
+    }
+}
